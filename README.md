@@ -1,8 +1,11 @@
-# Example Plugin
+# PHPUnit Starter for WordPress Plugin
 
-[![Build Status](https://app.travis-ci.com/wp-phpunit/example-plugin.svg?branch=master)](https://app.travis-ci.com/wp-phpunit/example-plugin)
+This repository provides a starter kit for unit testing WordPress plugins using PHPUnit.
 
-A complete example for using WP PHPUnit in the context of plugin development.
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
 
 ## Features
 
@@ -18,22 +21,31 @@ This project includes a working example `test-example.php` test case. Adding tes
 
 ## Local Development
 
-Install Composer dependencies
+1. Clone the repository
+```sh
+git clone https://github.com/devkabir/phpunit-starter-for-wordpress-plugin.git
+```
+2. Install Composer dependencies
 
 ```sh
-$ composer install
+composer install
 ```
 
-Create a database for your tests to use and update your `tests/wp-config.php` as necessary.
+3. Navigate to the plugin directory
+```sh
+cd phpunit-starter-for-wordpress-plugin
+```
+
+3. Create a database for your tests to use and update your `tests/wp-config.php` as necessary.
 
 ```sh
-$ mysqladmin create wp_phpunit_tests -u root
+mysqladmin create wp_phpunit_tests -u root
 ```
 
 The database name defaults to `wp_phpunit_tests`, but you can change this in the `tests/wp-config.php` without affecting the Travis configuration which is environment variable-based.
 
-Run the tests
+4. Run the tests
 
 ```sh
-$ composer test
+composer test
 ```

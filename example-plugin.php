@@ -1,10 +1,8 @@
 <?php
 /**
- * Plugin Name: WP PHPUnit Example Plugin
- * Description: A complete example for using WP PHPUnit with plugin development
- * Plugin URI: https://github.com/wp-phpunit/
- * Author: Evan Mattson
- * Author URI: https://aaemnnost.tv
+ * Plugin Name: PHPUnit Starter for WordPress Plugin
+ * Description: A starter kit for unit testing WordPress plugins using PHPUnit.
+ * Author: Evan Mattson & Dev Kabir
  * Version: 1.0
  */
 require_once __DIR__. '/vendor/autoload.php';
