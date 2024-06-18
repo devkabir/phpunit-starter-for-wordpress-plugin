@@ -3,8 +3,7 @@
 namespace Example;
 
 class Plugin {
-	public function __construct()
-	{
+	public function __construct() {
 		add_action( 'plugins_loaded', array( $this, 'do_stuff' ) );
 	}
 	public function do_stuff() {

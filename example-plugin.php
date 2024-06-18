@@ -5,14 +5,19 @@
  * Author: Evan Mattson & Dev Kabir
  * Version: 1.0
  */
-require_once __DIR__. '/vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 use Example\Plugin;
 
-add_action("init", 'example_plugin_file_line');
+add_action( 'init', 'example_plugin_file_line' );
 
-function example_plugin_file_line(){
-    return  plugin_basename( __FILE__ );
+/**
+ * Returns the basename of the current plugin file.
+ *
+ * @return string The basename of the current plugin file.
+ */
+function example_plugin_file_line() {
+	return plugin_basename( __FILE__ );
 }
 
 new Plugin();
